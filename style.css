@@ -1,208 +1,259 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
-.logo{
+
+.logo {
     display: block;
-    width:25%;
+    width: 25%;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
 }
-.header{
+
+.header {
     width: 100vw;
     height: 20vh;
     padding: 20px;
-    background-color:azure;
+    background-color: azure;
     display: flex;
-    align-items:center;
+    align-items: center;
 }
-.name{
-    font-size: 2rem;
+
+.name {
     width: 50%;
-    position:relative;
-    left:-25%;
+    position: relative;
+    left: -26%;
+    color: purple;
+    text-shadow: 5px 5px 10px rgba(233, 103, 233, 0.737);
+    font-weight: 600;
+    letter-spacing: 1px;
 }
-.header a{
+
+.header nav a {
+    padding: 0 2%;
     text-decoration: none;
-    color: black;
+    background-color: rgb(91, 91, 235);
+    color: white;
 }
-nav{
+
+nav {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-between;
 }
-.head-bar{
-    align-self:self-end;
+
+.head-bar {
+    align-self: self-end;
 }
-.search-icon{
+
+.search-icon {
     font-size: 1.6rem;
 }
-.search-icon:hover{
-       cursor: pointer;
+
+.search-icon:hover {
+    cursor: pointer;
 }
-.header nav a:hover{
+
+.header nav a:hover {
     text-decoration: underline;
+    color: rgb(62, 62, 210);
+    background-color: white;
 }
-.menu{
+
+.menu {
     color: black;
-    font-size:2rem;
-    display:none;
+    font-size: 2rem;
+    display: none;
 }
-.calendar{
+
+.calendar {
     font-size: 1.4rem;
 }
-.booking > a{
+
+.booking>a {
     font-size: 1.2rem;
 }
-.whatsappimage{
+
+.whatsappimage {
     margin: 0;
     width: 100vw;
-    height:60vh;
+    height: 60vh;
     background-image: url("https://www.carehospitals.com/assets/images/banners/whatsapp-desk-banner.webp");
     background-repeat: no-repeat;
     background-size: cover;
-} 
-.hospital-image{
+}
+
+.hospital-image {
     width: 100vw;
-    height:90vh;
+    height: 90vh;
     background-image: url("https://5.imimg.com/data5/SELLER/Default/2021/8/LR/AP/SW/6976612/hospital-wallpaper.jpg");
     background-size: cover;
     position: relative;
 }
-.wave-haikei{
+
+.wave-haikei {
     width: 100vw;
     height: 100vh;
 }
-.slogan{
-    color:black;
+
+.slogan {
+    color: black;
     text-shadow: 10px 10px 8px white;
     font-size: 5rem;
     position: absolute;
-    bottom:40%;
+    bottom: 40%;
     left: 2%;
 }
-.carenow{
+
+.carenow {
     font-size: 4rem;
-    color:darkblue;
+    color: darkblue;
 }
-.background{
-    width:100%;
-    height:60vh;
-    background-color:white;
+
+.background {
+    width: 100%;
+    height: 60vh;
+    background-color: white;
     display: grid;
     place-items: center;
-}   
-.back-image{
-    width: 30%;
-    height:50vh;
-  position:absolute; 
-  right:1%;
 }
-.text{
+
+.back-image {
+    width: 30%;
+    height: 50vh;
+    position: absolute;
+    right: 1%;
+}
+
+.text {
     width: 100vw;
     position: absolute;
     height: 40vh;
-    background-color:rgba(255, 255, 255, 0.808);
+    background-color: rgba(255, 255, 255, 0.808);
 }
-.carenow{
+
+.carenow {
     text-align: center;
-   font-size: 4rem;
+    font-size: 4rem;
 }
-.inside{
-    margin-top:2%;
+
+.inside {
+    margin-top: 2%;
     display: flex;
     gap: 10px;
     justify-content: center;
 }
-.dept{
+
+.dept {
     padding: 10px;
-    font-size: 1.2rem;
-    border: 2px solid;
-}
-.promptcare{
-    width: 200px;
-    padding: 10px;
-    text-align:center;
     font-size: 1.4rem;
     border: 2px solid;
 }
-.dept:hover,.promptcare:hover{
+
+.promptcare {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    border: 2px solid;
+}
+
+.dept:hover,
+.promptcare:hover {
     background-color: black;
     color: white;
     border: black;
 }
-.middle{
+
+.middle {
     width: 100%;
     height: 40vh;
     padding: 50px;
-    background-color:rgb(26, 24, 24);
+    background-color: rgb(26, 24, 24);
     color: white;
     display: grid;
     place-items: center;
 }
-.middle>h2{
+
+.middle>h2 {
     font-size: 3rem;
     text-align: center;
 }
-.middle>p{
+
+.middle>p {
     text-align: center;
     font-size: 1.4rem;
 }
-.layout-container{
+
+.layout-container {
     display: grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1px;
-    background-color:rgb(26, 24, 24);    
+    background-color: rgb(26, 24, 24);
 }
-.image-1,.image-2,.image-3,.image-4{
+
+.image-1,
+.image-2,
+.image-3,
+.image-4 {
     width: 318px;
 }
-.layout-container p{
-    line-height:3rem;
+
+.layout-container p {
+    line-height: 3rem;
     font-size: 1.4rem;
     text-align: center;
 }
-.layout-container h3{
+
+.layout-container h3 {
     text-align: center;
     font-size: 2rem;
     line-height: 3rem;
 }
-.layout-container>div{
-    background-color:rgb(26, 24, 24);
+
+.layout-container>div {
+    background-color: rgb(26, 24, 24);
     color: white;
 }
-.layout-container>div:hover{
+
+.layout-container>div:hover {
     background-color: darkblue;
 }
-.open{
+
+.open {
     width: 320px;
 }
-.photo{
-     width: 321px;
-     height: 40vh;
-     display: block;
-     background-size: contain;
-     background-repeat: no-repeat;
+
+.photo {
+    width: 321px;
+    height: 40vh;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: url("https://plus.unsplash.com/premium_photo-1673953509986-9b2bfe934ae5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8JTIzc3RldGhvc2NvcGV8ZW58MHx8MHx8fDA%3D");
 }
-.photo>.now{
+
+.photo>.now {
     font-size: 1.8rem;
     display: grid;
     place-items: center;
-    height:37vh;
-    background-color:rgba(0, 0, 139, 0.753);
+    height: 37vh;
+    background-color: rgba(0, 0, 139, 0.753);
 }
-.open{
+
+.open {
     display: grid;
     grid-template-columns: 320px;
 }
-.need{
+
+.need {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -210,7 +261,8 @@ nav{
     background-size: cover;
     background-image: url("https://media.istockphoto.com/id/2160715263/photo/medical-research-center-laboratory-caucasian-female-neurologist-using-desktop-computer-with.jpg?s=612x612&w=0&k=20&c=KuUzuHuq7sN0ZERIYi6j7IACNqjS3yfNrBTVO83b6cA=");
 }
-.box{
+
+.box {
     width: 500px;
     height: 60vh;
     background-color: white;
@@ -220,234 +272,309 @@ nav{
     border-radius: 20px;
     line-height: 2rem;
 }
-.box>h3{
+
+.box>h3 {
     padding: 2%;
     font-size: 3rem;
     text-align: center;
     margin-top: 10px;
     color: darkblue;
 }
-.box p{
+
+.box p {
     padding: 3%;
     font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
-
 }
-.Find-a{
+
+.Find-a {
     padding: 1px;
     position: absolute;
     left: 25%;
     bottom: 20%;
     text-align: center;
     width: 200px;
-    background-color:rgb(36, 123, 246);
-    font-weight:800;
+    background-color: rgb(36, 123, 246);
+    font-weight: 800;
     color: white;
 }
-.Find-a:hover{
+
+.Find-a:hover {
     background-color: white;
-    color:rgb(36, 123, 246) ;
+    color: rgb(36, 123, 246);
 }
- .image-gallery{
+
+.image-gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap:1px;
-  font-family: 'Times New Roman', Times, serif;
- }
-.item1{
+    gap: 1px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.item1 {
     display: grid;
     place-items: center;
 }
- .item2{
+
+.item2 {
     background-image: url("https://w0.peakpx.com/wallpaper/915/450/HD-wallpaper-interior-pharmacy-cute-pharmacy.jpg");
- }
- .item1,.item2,.item3,.item3,.item4,.item5,.item6,.item7,.item8{ 
+}
+
+.item1,
+.item2,
+.item3,
+.item3,
+.item4,
+.item5,
+.item6,
+.item7,
+.item8 {
     width: 100%;
-    height:40vh;
+    height: 40vh;
     font-size: 2rem;
-    background-color:rgb(36, 123, 246);
-    background-position: center; 
-background-size: cover;
-background-repeat:no-repeat; 
- }
-  .item3{
- background-image: url("https://evolveyoursuccess.com/wp-content/uploads/2022/10/Graphics-Caption-3-MSP-107-Holly-Frankenberg.jpg");
-} 
-.item4{
+    background-color: rgb(36, 123, 246);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item3 {
+    background-image: url("https://evolveyoursuccess.com/wp-content/uploads/2022/10/Graphics-Caption-3-MSP-107-Holly-Frankenberg.jpg");
+}
+
+.item4 {
     background-image: url("https://www.gcsmc.org/assets/images/clinical-services/cathlab.jpg");
 }
-.item5{
+
+.item5 {
     background-image: url("https://oksmithlaw.com/wp-content/uploads/2024/07/20558-Nursing-home-patient-room-with-two-empty-beds-AdobeStock_535299083_resized-scaled.jpg");
 }
-.item6{
+
+.item6 {
     background-image: url("https://lordshospital.org/wp-content/uploads/2022/04/Nutrition-and-Dietetics.jpg");
 }
-.item7{
+
+.item7 {
     background-image: url("https://www.who.int/images/default-source/wpro/health-topic/hospitals/f8-11102016-my-6042.tmb-1024v.jpg?Culture=en&sfvrsn=57e1f33d_4");
 }
-.item8{
+
+.item8 {
     background-image: url("https://iroquoismemorial.com/files/_cache/f3029488da9715d3a982475468356fd7.jpg");
 }
- .item2 p,.item3 p,.item4 p, .item5 p,.item6 p,.item7 p,.item8 p{
+
+.item2 p,
+.item3 p,
+.item4 p,
+.item5 p,
+.item6 p,
+.item7 p,
+.item8 p {
     width: 100%;
-    height:100%;
-    color:white;
+    height: 100%;
+    color: white;
     text-shadow: 10px 10px 8px black;
-    font-size:2rem;
-    text-align:center;
-    background-color:rgba(81, 81, 196, 0.61); 
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgba(81, 81, 196, 0.61);
     display: grid;
-place-items:center;
- }
- .image-gallery p:hover{
-   background-color: transparent;
-   color: black;
-   font-weight: 600;
- }
- .image-gallery b{
+    place-items: center;
+}
+
+.image-gallery p:hover {
+    background-color: transparent;
+    color: black;
+    font-weight: 600;
+}
+
+.image-gallery b {
     font-size: 1.2rem;
     color: rgb(77, 77, 205);
-    background-color:azure ;
+    background-color: azure;
     text-shadow: none;
     display: none;
- }
- .image-gallery p:hover{
-    b{
-    display: block;
+}
+
+.image-gallery p:hover {
+    b {
+        display: block;
     }
-    b:hover{
+
+    b:hover {
         background-color: transparent;
         color: white;
         border: 2px solid #ccc;
         color: black;
     }
- }
-.contactus{
-   font-size: 1.2rem;
-   background-color:white;
-   color:darkblue;
-   width: 100px;
-   padding:2px;
 }
-.contactus:hover{
+
+.contactus {
+    font-size: 1.2rem;
+    background-color: white;
+    color: darkblue;
+    width: 100px;
+    padding: 2px;
+    text-align: center;
+}
+
+.contactus:hover {
     background-color: transparent;
     color: white;
 }
-.footer{
-    background-color:darkblue;
+
+.footer {
+    /* padding: 10%; */
+    background-color: darkblue;
     display: grid;
-    grid-template-columns:repeat(4, 1fr);
+    /* justify-items: center;
+    align-items: center; */
+    grid-template-columns: repeat(4, 1fr);
 }
-.footer div{
-padding: 10%;
-color: white;
+
+.footer div {
+    padding: 10%;
+    color: white;
+    line-height: 2rem;
 }
-.footer-1,.footer-3{
-    padding: 2%;
-    font-size:18px;
-    text-align:start;
+
+.footer-1,
+.footer-3 {
+    padding: 1%;
+    font-size: 18px;
+    text-align: start;
     display: grid;
     place-items: center;
 }
-.footer-2 a{
-    font-size: 1.2rem;
-    color: white;
-   margin: 10px;
 
+.footer-1 p {
+    font-size: 1.4rem;
 }
-.footer hr{
+
+.footer-2 a {
+    font-size: 1.4rem;
+    color: white;
+    margin: 10px;
+}
+
+.footer hr {
     width: 100%;
-    font-weight:1000;
 }
-section{
-    font-size: 1.2rem;
+
+section {
+    font-size: 1.4rem;
 }
-.footer-1 section:hover,.footer-2 a:hover,.footer-3 section:hover{
+
+.footer-1 section:hover,
+.footer-2 a:hover,
+.footer-3 section:hover {
     color: orange;
 }
-.icon{
-    color:skyblue;
-    font-size:1.8rem;
+
+.icon {
+    color: skyblue;
+    font-size: 1.8rem;
     position: fixed;
     bottom: 10%;
     right: 2%;
 }
-.icon i:hover{
-       font-size: 2rem;
-       color:white;
+
+.icon i:hover {
+    font-size: 2rem;
+    color: white;
 }
-@media screen and (min-width : 300px) and (max-width : 550px){
-    .header nav{
+
+@media screen and (min-width : 300px) and (max-width : 550px) {
+    .header nav {
         display: none;
     }
-    .menu{
+
+    .name {
+        width: 100%;
+        font-size: 1.1rem;
+        left: -50%;
+    }
+
+    .menu {
         font-size: 3.5rem;
         display: block;
     }
-    .whatsappimage{
-        width:100vw;
-        height:18vh;
+
+    .whatsappimage {
+        width: 100vw;
+        height: 18vh;
     }
-     .slogan{
-        font-size:2.3rem;
+
+    .slogan {
+        font-size: 2.3rem;
     }
-    .back-image{
+
+    .back-image {
         width: 30%;
-        height:20vh;
-      position:absolute; 
-      right:1%;
+        height: 20vh;
+        position: absolute;
+        right: 1%;
     }
-    .text{
+
+    .text {
         height: 30vh;
     }
-    .background{
+
+    .background {
         height: 50vh;
-    } 
-    .carenow{
+    }
+
+    .carenow {
         font-size: 2rem;
         padding: 2px;
         gap: 5px;
-    } 
-     .inside{
+    }
+
+    .inside {
         display: grid;
         grid-template-columns: 1fr;
         place-items: center;
         padding: 10px;
         margin: 10px;
-     }
-     .middle h2{
+    }
+
+    .middle h2 {
         font-size: 2.7rem;
         line-height: normal;
-     }
-    .layout-container{
+    }
+
+    .layout-container {
         grid-template-columns: 1fr;
         place-items: center;
     }
-    .box{
-        height:40vh;
-        width:300px;
-        line-height:1.6rem;
+
+    .box {
+        height: 40vh;
+        width: 300px;
+        line-height: 1.6rem;
         left: 15%;
-    } 
-    .box h3{
+    }
+
+    .box h3 {
         font-size: 2.2rem;
     }
-    .Find-a{
-        width:auto;
-        font-size:1rem;
+
+    .Find-a {
+        width: auto;
+        font-size: 1rem;
         left: 25%;
-        bottom:5%;
-        text-align:center;
+        bottom: 5%;
+        text-align: center;
         display: grid;
     }
-    .image-gallery{
+
+    .image-gallery {
         margin: 10%;
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         place-items: center;
     }
-    .footer{
-        grid-template-columns:1fr;
+
+    .footer {
+        grid-template-columns: 1fr;
+        place-items: center;
     }
-     
-}  
+}
